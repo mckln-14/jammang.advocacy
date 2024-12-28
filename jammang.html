@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Air Quality Awareness</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #003366;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .hero {
+            background-color: #00c6ff;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .card-content h2 {
+            color: #003366;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        .card-content p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .image-gallery {
+            margin: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .image-gallery h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+        }
+        button {
+            background: #00c6ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background: #007acc;
+            transform: scale(1.05);
+        }
+	figcaption {
+    	    font-size: 1rem;
+   	    color: #666;
+    	    margin-top: 10px;
+    	    text-align: center;
+	}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Indoor Air Quality Awareness</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Enhancing Lives Through Cleaner Air</h1>
+    <p>Discover the importance of maintaining healthy indoor air quality for better health and comfort.</p>
+</section>
+
+<section id="about" class="content">
+    <div class="card">
+        <img src="air_purifier.png" alt="Air Purifier">
+        <div class="card-content">
+            <h2>Why Indoor Air Quality Matters</h2>
+            <p>Indoor air quality significantly impacts our health, comfort, and productivity. Poor air quality can lead to respiratory issues, allergies, and fatigue.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="plants.png" alt="Plants">
+        <div class="card-content">
+            <h2>Natural Solutions</h2>
+            <p>Plants like peace lilies and snake plants help purify indoor air naturally, creating a healthier and more pleasant environment.</p>
+        </div>
+    </div>
+</section>
+
+<section id="benefits" class="image-gallery">
+    <h2>Benefits of Good Indoor Air Quality</h2>
+    <div class="gallery">
+        <figure>
+            <img src="health.png" alt="Healthy Living">
+            <figcaption>Healthy Living</figcaption>
+        </figure>
+        <figure>
+            <img src="productivity.png" alt="Improved Productivity">
+            <figcaption>Improved Productivity</figcaption>
+        </figure>
+        <figure>
+            <img src="comfort.png" alt="Comfort">
+            <figcaption>Comfort</figcaption>
+        </figure>
+    </div>
+</section>
+
+
+<section id="contact" class="hero">
+    <h2>Contact Us</h2>
+    <p>Email: awareness@iaq.org | Phone: +123 456 7890</p>
+    <button onclick="alert('Thank you for reaching out!')">Reach Out</button>
+</section>
+
+<footer class="footer">
+    <p>© 2024 Indoor Air Quality Awareness. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
